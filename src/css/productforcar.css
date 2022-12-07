@@ -1,0 +1,34 @@
+.container-product-cart{
+    margin: 0.3rem;
+    border: 1px solid rgba(0, 0, 0, 0.179);
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+.cantidad-product-cart{
+    border: 1px solid green;
+    border-radius: 5px;
+    margin-left: 1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.desc-product-cart{
+    margin-left: 0.3rem;
+    display: inline;
+}
+
+.ingredients-product-cart{
+    margin-left: 1.5rem;
+}
+
+.ingredients-product-cart h4{
+    margin: 0.6rem;
+}
+
+.ingredients-product-cart p{
+    margin: 0rem;
+    margin-left: 2rem;
+}

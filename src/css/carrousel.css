@@ -1,0 +1,42 @@
+.container-carrousel{
+    height: 30rem;
+    width: 70rem;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.arrow{
+    background-color: rgba(240, 248, 255, 0.278);
+    border: 0;
+    color: rgba(0, 0, 0, 0.492);
+    position: relative;
+    font-size: 2rem;
+    margin: 0 0;
+    padding: 0;
+    z-index: 2;
+    top:12rem;
+    transition: width 0.1s 0.1s ease-in;
+}
+
+.arrow:hover{
+    width: 2.3rem;
+    cursor: pointer;
+}
+
+.right-arrow{
+    left: 65.9rem;
+}
+
+.carrousel-image{
+    border: 2px solid;
+    position: relative;
+    top:-2.6rem;
+    border-radius: 0px 0px 10px 10px;
+    width: 70rem;
+    transition-property: opacity;
+    transition-duration: 0.3s, 0.3s;
+}
+
+.hide-image{
+    opacity: 0;
+}

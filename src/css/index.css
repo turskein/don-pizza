@@ -1,0 +1,30 @@
+.container-index{
+    border:1px solid rgba(219, 216, 216, 0.997);
+    padding: 0.3rem;
+    font-size: 2rem;
+    padding-top: 0rem;
+    padding-left: 0;
+    margin: 0.3rem 0 0.3rem 6rem;
+    display:block;
+    align-items: center;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+    width: 80.1rem;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    overflow:hidden;
+    transition: width 0.3s 0.3s ease-in-out;
+}
+
+.container-indez-post-cart{
+    width:65%;
+    overflow:hidden;
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+}
+
+.container-frames-pizza{
+    display: inline-block;
+    margin-left: 2rem;
+}

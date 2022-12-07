@@ -1,0 +1,183 @@
+.container-nav{
+    border:1px solid rgba(219, 216, 216, 0.997);
+    background-color: white;
+    border-top: 0px;
+    padding: 0.3rem;
+    font-size: 2rem;
+    padding-top: 1rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+    width: 79.9rem;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transition: fixed 0.3s 0.3s ease-out;
+}
+
+.container-nav-movement{
+    position:fixed;
+    z-index: 3;
+    margin-left: 6rem;
+}
+
+.cart-nav{
+    margin-left: auto;
+    margin-right: 3rem;
+}
+
+.cart-nav:hover{
+    cursor: pointer;
+}
+
+.link-nav{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.link-nav:hover{
+    cursor:pointer;
+}
+
+.logo{
+    width: 8rem;
+    margin-left: 3rem;
+}
+
+.number-orders{
+    font-size: 1.2rem;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 1.3rem;
+    height: 1.3rem;
+    padding-left: 0.1rem;
+    padding-bottom: 0.4rem;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    top:1rem;
+    right: 4rem;
+}
+
+.number-orders:hover{
+    cursor: pointer;
+}
+
+.shop-list{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(161, 33, 33);
+    border-radius: 5px;
+    padding: 0.3rem;
+    position: fixed;
+    top: 3.5rem;
+    right: 3.3rem;
+    width: 30rem;
+    background-color: rgb(255, 255, 255);
+    opacity:0;
+    transition-property: opacity;
+    transition-duration: 0.2s, 0.1s;
+}
+
+.show{
+    opacity:1;
+}
+
+.logo:hover{
+    cursor:pointer;
+}
+
+.close-shop-list{
+    cursor: pointer;
+    position:absolute;
+    right:2rem;
+    border: 0;
+    border-radius: 7px;
+    padding: 0;
+    font-size: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    padding-left: 0rem;
+    padding-top: 0rem;
+    background-color: rgba(241, 233, 119, 0);
+    border: 2px solid;
+}
+
+.close-shop-X{
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.table-th{
+    font-size: 1.4rem;
+}
+
+.table-th-producto{
+    padding-left: 1.5rem;
+    text-align: left;
+    width: 15rem;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.table-th-precio{
+    border-left: 1px solid black;
+    padding-left: 0rem;
+    margin: 0px;
+    border-bottom: 1px solid black;
+}
+
+.table-th-buttons{
+    font-size: 0px;
+}
+
+.table-tb-producto{
+    padding-left: 1rem;
+    text-align: left;
+    width: 5rem;
+    font-size: 1.3rem;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin: 0px;
+    
+}
+
+.table-tb-precio{
+    margin: 0px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    text-align: left;
+    width: 5rem;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.plus{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 6px;
+    background-color: rgba(48, 204, 48, 0.71);
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+    margin-right:0.3rem;
+}
+.minus{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 6px;
+    margin-top: 0.3rem;
+    background-color: rgba(204, 48, 48, 0.805);
+}
+
+.table-button{
+    background-color: rgba(253, 248, 232, 0);
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
