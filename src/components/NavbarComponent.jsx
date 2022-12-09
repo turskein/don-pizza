@@ -56,8 +56,8 @@ class NavbarComponent extends Component {
         return (
             <div className='container-nav' id="container-nav">
                 <a href="/" className='link-nav' ><img className="logo" srcSet={logo} alt="" /></a>
-                <a href="/" className='link-nav'>CATÁLOGO</a>
-                <a href="/" className='link-nav'>MENÚ</a>
+                <a href="/catalogo" className='link-nav'>CATÁLOGO</a>
+                <a href="/personalizar" className='link-nav'>ÁRMALA</a>
                 
                 <BiCartAlt size='2.6rem' className='cart-nav' onClick={()=>this.props.switchShow()}/>
             </div>

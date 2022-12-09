@@ -6,7 +6,8 @@ import IndexComponent from './components/IndexComponent';
 import CartShopComponent from './components/CartShopComponent'
 import FooterComponent from './components/FooterComponent'
 import ClearCarritoModalComponent from './components/modals/ClearCarritoModalComponent'
-
+import CatalogoComponent from './components/CatalogoComponent';
+import PersonalizarPizzaComponent from './components/PersonalizarPizzaComponent';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <div>
           <Routes>
             <Route path="/" exact element={<IndexComponent/>}></Route>
+            <Route path="/catalogo" exact element={<CatalogoComponent/>}></Route>
+            <Route path="/personalizar" exact element={<PersonalizarPizzaComponent/>}></Route>
           </Routes>
         </div>
       </Router>

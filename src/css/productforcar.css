@@ -49,6 +49,13 @@
     color: rgba(0, 0, 0, 0.627);
 }
 
+.trash-product-cart:hover{
+    margin-left: -0.05rem;
+    zoom: 104%;
+    cursor: pointer;
+    color: rgba(51, 1, 1, 0.644);
+}
+
 .price-product-cart h3{
     position: relative;
     left: 15rem;

@@ -20,14 +20,14 @@ class CartShopComponent extends Component {
     /* <div className='container-cart-shop container-cart-shop-post-show' id="cart-shop"> */
     render() {
         let jaja = this.props.products.map((prd) => {
-            return <ProductForCartComponent cantidad={prd.cantidad} desc={prd.desc} ingredientes={prd.ingredientes} price={prd.precio} />
+            return <ProductForCartComponent id={prd.id} cantidad={prd.cantidad} desc={prd.desc} ingredientes={prd.ingredientes} price={prd.precio} />
         });
-        if(jaja.length == 0){
+        if(jaja.length === 0){
             jaja = <p className='empty-cart'>Aún no has comprado nada D:</p>
         }
         return (
 
-            <div className='container-cart-shop' id="cart-shop">
+            <div className='container-cart-shop container-cart-shop-post-show' id="cart-shop">
                 <h2 className='title-cart'>Resumen de tu compra :D </h2 >
                 <div className='products-cart-shop'>
                     {jaja}

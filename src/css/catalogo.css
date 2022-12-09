@@ -1,0 +1,63 @@
+.container-catalogo{
+    border:1px solid rgba(219, 216, 216, 0.997);
+    padding: 0.3rem;
+    font-size: 2rem;
+    padding-top: 0rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0.3rem 0 0 6rem;
+    display:block;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 1rem;
+    width: 80.1rem;
+    box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.1);
+    overflow:hidden;
+    transition: width 0.3s 0.3s ease-in-out;
+    min-height: 50rem;
+    font-size: 2rem;
+}
+
+.container-catalogo-post-show{
+    font-size: 2rem;
+    width:65%;
+    overflow:hidden;
+    border:1px solid rgba(219, 216, 216, 0.997);
+    border-radius: 10px 10px 0 0;
+    margin: 0.3rem 0 0 6rem;
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+}
+
+.table-links-catalogo{
+    padding: 0;
+    margin: 0;
+    width: 101%;
+    height: 3.1rem;
+    border-bottom: 1px solid rgba(219, 216, 216, 0.997);
+}
+
+.table-links-catalogo thead{
+    margin: 0;
+    padding: 0;
+}
+
+.table-links-catalogo td{
+    padding: 0;
+    margin: 0 0 0 0 ;
+    width: 33.333%;
+    text-align: center;
+    border-right: 1px solid rgba(219, 216, 216, 0.997);
+
+    text-decoration: none;
+    color:black;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.table-links-catalogo td:hover{
+    font-size: 1.8rem;
+}

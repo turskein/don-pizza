@@ -60,8 +60,6 @@ class IndexComponent extends Component {
                         <FramePizzaComponent id="2" image={campesina} name={"AMERICANA"} ingredients={["Jamón", "Carne", "Salchicha", "Pepperoni"]} med="10000" grande="20000" />
                         <FramePizzaComponent id="3"image={campesina} name={"CAMPESINA"} ingredients={["Pollo", "Pimiento", "Champiñón"]} med="10000" grande="20000" />
                         <FramePizzaComponent id="4" image={campesina} name={"HAWAIANA"} ingredients={["Pollo", "Jamón", "Piña"]} med="10000" grande="20000" />
-                        <FramePizzaComponent id="5" image={campesina} name={"MECHADA BBQ"} ingredients={["Carne Mechada", "Tomate", "Cebolla"]} med="10000" grande="20000" />
-                        <FramePizzaComponent id="6" image={campesina} name={"VEGAN QUEEN"} ingredients={["Champiñón", "Pimiento", "Cebolla", "Choclo", "Tomáte"]} med="10000" grande="20000" />
                     </div>
                 </div>
                 

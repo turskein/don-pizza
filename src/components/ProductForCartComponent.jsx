@@ -38,7 +38,7 @@ class ProductForCartComponent extends Component {
                     {this.state.ingredients}
                 </div>
                 <div className='price-product-cart'>
-                    <BsFillTrashFill size={25} className="trash-product-cart"/>
+                    <BsFillTrashFill size={25} className="trash-product-cart" onClick={()=>this.props.deleteOneProduct(this.props.id)}/>
                     <h3>{this.props.price}</h3>
                 </div>
                 

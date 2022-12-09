@@ -68,14 +68,14 @@ export const cartSlice = createSlice({
                         state.products[i].cantidad --;
                     // when there are just one product
                     }else{
-                        state.products.filter((prd) => {
+                        state.products = state.products.filter((prd) => {
                             return prd !== product;
                         })
                     }
                     break;
                 }
             }
-            
+            localStorage.setItem("products",JSON.stringify(state.products));
         },
         deleteAllProduct: (state) => {
             state.products = [];
