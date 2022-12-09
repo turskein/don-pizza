@@ -9,10 +9,11 @@
 }
 .div-image{
     display: inline-block;
+    overflow: hidden;
     margin: 0;
     padding: 0;
     width: 10rem;
-    height: 10rem;
+    height: 18rem;
 }
 
 .div-infor-frame{
@@ -28,7 +29,7 @@
     font-size: 0.9rem;
     font-weight: bold;
     border: 1px solid rgba(2, 2, 146, 0.632);
-    color: rgba(2, 2, 146, 0.632);;
+    color: rgba(2, 2, 146, 0.632);
     border-radius: 5px;
     background-color: white;
     margin-left: 0.3rem;
@@ -38,10 +39,17 @@
     bottom: 0.6rem;
 }
 
+.button-frame:hover{
+    cursor:pointer;
+    background-color: rgba(227, 237, 191, 0.171);
+    margin-left: 0.1rem;
+    zoom: 105%;
+}
+
 .image-frame{
     border-radius: 9px 0 0 9px;
     margin: 0;
-    width: 10rem;
+    width: 18rem;
     height: 18rem;
 }
 

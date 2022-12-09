@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
 import "../css/framepizza.css";
+import { connect } from 'react-redux';
+
+import {addProduct} from '../redux/slices/cartSlice';
 
 
 class FramePizzaComponent extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            ingredients: [<p>Ningun ingrediente</p>]
+            ingredients: [<p>Ningun ingrediente</p>],
+            formal_prod: {
+                id: this.props.id,
+                desc: this.props.name,
+                cantidad: 1,
+                ingredientes: this.props.ingredients,
+                precio: this.props.med
+            }
         }
     }
     componentDidMount() {
@@ -49,7 +59,7 @@ class FramePizzaComponent extends Component {
 
 
 
-                    <button className='button-frame'>
+                    <button className='button-frame' onClick={() => this.props.addProduct(this.state.formal_prod)}>
                         Agregar al carrito
                     </button>
                 </div>
@@ -58,4 +68,11 @@ class FramePizzaComponent extends Component {
     }
 }
 
-export default FramePizzaComponent
+const mapStateToProps = (state) => ({
+    estado: state.stateShow.show,
+    products: state.stateShow.products
+});
+
+const mapDispatchToProps = { addProduct };
+
+export default connect(mapStateToProps, mapDispatchToProps)(FramePizzaComponent)

@@ -17,6 +17,7 @@
 
 .container-nav-movement{
     position:fixed;
+    top: 0rem;
     z-index: 3;
     margin-left: 6rem;
 }

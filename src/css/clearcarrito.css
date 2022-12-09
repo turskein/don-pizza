@@ -1,0 +1,53 @@
+.container-clear-carrito{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0rem;
+    background-color: rgba(0, 0, 0, 0.267);
+    z-index: 100;
+    display: flex;
+    transition: opacity 0.3s 0.3s ease-in-out;
+}
+
+.dont-show-modal-clear-carrito{
+    display: none;
+    opacity: 0%;
+}
+
+.frame-text-clear-carrito{
+    text-align: center;
+    border-radius: 7px;
+    padding: 0.8rem;
+    height: 8rem;
+    background-color: white;
+    width: 22rem;
+    margin: auto auto;
+}
+
+.frame-text-clear-carrito button{
+    cursor: pointer;
+    display: inline;
+    width: 9rem;
+    margin: 0 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 0.3rem;
+    color: white;
+}
+
+
+.si-clear-carrito{
+    background-color: rgba(248, 36, 36, 0.925);
+}
+
+.si-clear-carrito:hover{
+    background-color: rgba(182, 29, 29, 0.925);
+}
+
+.no-clear-carrito{
+    background-color: rgb(22, 130, 22);
+}
+
+.no-clear-carrito:hover{
+    background-color: rgb(12, 75, 12);
+}

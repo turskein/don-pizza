@@ -21,7 +21,10 @@
 }
 
 .ingredients-product-cart{
+    width: 20.3rem;
     margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.288);
 }
 
 .ingredients-product-cart h4{
@@ -31,4 +34,24 @@
 .ingredients-product-cart p{
     margin: 0rem;
     margin-left: 2rem;
+}
+
+.price-product-cart{
+    display: flex;
+    align-items: center;
+    width: 20.4rem;
+    margin-top: 0.3rem;
+    margin-left: 1.5rem;
+    padding: 0 0 0 0;
+}
+
+.trash-product-cart{
+    color: rgba(0, 0, 0, 0.627);
+}
+
+.price-product-cart h3{
+    position: relative;
+    left: 15rem;
+    margin: 0.3rem;
+    display: inline;
 }

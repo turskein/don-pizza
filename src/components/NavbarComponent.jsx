@@ -13,6 +13,7 @@ class NavbarComponent extends Component {
             opcion: 0,
             opcion_scroll:0,
             amount_products:0,
+            precio: 10000
         }
     }
 
@@ -58,7 +59,7 @@ class NavbarComponent extends Component {
                 <a href="/" className='link-nav'>CATÁLOGO</a>
                 <a href="/" className='link-nav'>MENÚ</a>
                 
-                <BiCartAlt size='2.6rem' className='cart-nav' onClick={this.props.switchShow}/>
+                <BiCartAlt size='2.6rem' className='cart-nav' onClick={()=>this.props.switchShow()}/>
             </div>
         )
     }

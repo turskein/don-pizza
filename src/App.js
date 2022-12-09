@@ -3,6 +3,9 @@ import React from 'react';
 import NavbarComponent from './components/NavbarComponent'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import IndexComponent from './components/IndexComponent';
+import CartShopComponent from './components/CartShopComponent'
+import FooterComponent from './components/FooterComponent'
+import ClearCarritoModalComponent from './components/modals/ClearCarritoModalComponent'
 
 
 function App() {
@@ -16,7 +19,9 @@ function App() {
           </Routes>
         </div>
       </Router>
-      
+      <CartShopComponent/>
+      <FooterComponent/>
+      <ClearCarritoModalComponent/>
     </div>
   );
 }

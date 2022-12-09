@@ -1,0 +1,38 @@
+.container-footer{
+    background-color: rgba(31, 30, 54, 0.997);
+    color: rgba(255, 255, 255, 0.804);
+    padding: 0.3rem;
+    font-size: 2rem;
+    padding:2rem;
+    margin: 0;
+    display:block;
+    align-items: center;
+    padding-bottom: 1rem;
+    width: 100%;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem 2rem 8rem;
+    min-height: 12rem;
+}
+.table-footer{
+    display: inline;
+    position: relative;
+    top:-5rem;
+}
+
+.table-footer th{
+    text-align: left;
+    padding-left: 0.5rem;
+    width: 13rem;
+    font-size: 1.2rem;
+}
+
+.table-footer td{
+    font-size: 1rem;
+}
+
+.pizza-footer{
+    margin-right: 1rem;
+    width: 9rem;
+    height: 9rem;
+    display: inline;
+}
