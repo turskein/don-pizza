@@ -32,7 +32,7 @@ export const everyagregado = [
     },
     {
         id:24,
-        image: salsagarlic,
+        image: salsamiel,
         cantidad: 1,
         desc: "Salsa Miel",
         ingredientes: ["Salsa Miel sazonador"],

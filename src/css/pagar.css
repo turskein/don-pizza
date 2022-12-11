@@ -1,0 +1,257 @@
+.container-pago{
+    color: rgba(2, 2, 146, 0.632);
+    padding: 0.3rem;
+    font-size: 2rem;
+    padding-top: 0rem;
+    padding-left: 0;
+    margin: 0.3rem 0 0 6rem;
+    display:inline-block;
+    align-items: center;
+    padding-bottom: 1rem;
+    width: 80.1rem;
+    overflow:hidden;
+}
+.firt-row-pago{
+    display: inline-flex;
+}
+
+.sect-datos-pago{
+    overflow: hidden;
+    margin: 0.5rem;
+    display: inline-block;
+    border:1px solid rgba(219, 216, 216, 0.997);
+    box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.1);
+    width: 35.5rem;
+    height: 19rem;
+}
+
+.sect-datos-pago h5{
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+.sect-datos-pago p{
+    font-size: 1rem;
+    margin: 0.1rem 1rem;
+}
+
+.sect-datos-pago input{
+    width: 30rem;
+    font-size: 1.1rem;
+    height: 1.3rem;
+    margin: 0 0 0.6rem 0.6rem;
+    border: 1px solid rgba(2, 2, 146, 0.632);
+    border-radius: 4px;
+}
+
+.sect-entrega-pago{
+    margin: 0.5rem;
+    display: inline-block;
+    border:1px solid rgba(219, 216, 216, 0.997);
+    box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.1);
+    width: 38rem;
+    height: 17rem;
+    padding: 1rem;
+    padding-left: 1rem;
+
+}
+
+.sect-entrega-pago h5{
+    font-size: 1.4rem;
+    margin: 1rem 0 0 0;
+}
+
+.money-pago{
+    position: relative;
+    top: 0.2rem;
+}
+
+.sect-entrega-pago button{
+    display: block;
+    padding: 0.3rem;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid rgba(2, 2, 146, 0.411);
+    color: rgba(2, 2, 146, 0.632);
+    border-radius: 5px;
+    font-size: 1.3rem;
+    margin: 0.8rem;
+    height: 3rem;
+    width: 11rem;
+}
+
+.sect-entrega-pago button:hover{
+    border: 2px solid rgba(2, 2, 146, 0.726);
+    background-color: rgba(2, 2, 146, 0.05);
+}
+
+.card-pago{
+    position: relative;
+    top: 0.2rem;
+}
+
+.met-pago{
+    position: relative;
+    top:0.1rem;
+    display: inline-block;
+    width: 12.2rem;
+}
+.prop-pago{
+    display: inline-block;
+    width: 12rem;
+}
+
+.recibo-pago{
+    display: inline-block;
+    position: relative;
+    bottom: 3.85rem;
+
+}
+
+.img-pago{
+    position: relative;
+    top: 0.3rem;
+    width: 3.5rem;
+}
+
+.datos-entrega-pago{
+    margin: 0.5rem;
+    display: inline-block;
+    border:1px solid rgba(219, 216, 216, 0.997);
+    box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.1);
+    width: 33.5rem;
+    padding: 1rem;
+}
+
+.datos-entrega-pago h5{
+    margin: 0;
+}
+
+.datos-entrega-pago button{
+    padding: 0.3rem;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid rgba(2, 2, 146, 0.411);
+    color: rgba(2, 2, 146, 0.632);
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 0.8rem;
+    height: 3rem;
+    width: 11rem;
+}
+
+.datos-entrega-pago button:hover{
+    border: 2px solid rgba(2, 2, 146, 0.726);
+    background-color: rgba(2, 2, 146, 0.05);
+}
+
+.datos-entrega-dom-pago p{
+    font-size: 1rem;
+    margin: 0.1rem 1rem;
+}
+
+.datos-entrega-dom-pago{
+    width: 33rem;
+}
+
+.datos-entrega-dom-pago span{
+    display: inline-block;
+}
+
+.comuna-pago{
+    width: 10.5rem;
+    padding: 0.4rem;
+    position: relative;
+    bottom: -0.1rem;
+    height: 4.9rem;
+    margin: 0.2rem;
+}
+
+.comuna-pago p{
+    margin-bottom: 0.2rem;
+}
+
+.comuna-pago select{
+    color:rgba(2, 2, 146, 0.632);
+    width: 7rem;
+    font-size: 1.1rem;
+    height: 1.3rem;
+    margin: 0 0 0.6rem 0.6rem;
+    border: 1px solid rgba(2, 2, 146, 0.632);
+    border-radius: 4px;
+}
+
+.calle-pago{
+    padding: 0.5rem;
+    width: 20rem;
+}
+
+.calle-pago input{
+    width: 18.4rem;
+    font-size: 1.1rem;
+    height: 1.3rem;
+    margin: 0 0 0.6rem 0.6rem;
+    border: 1px solid rgba(2, 2, 146, 0.632);
+    border-radius: 4px;
+}
+
+.num-pago{
+    padding: 0.5rem;
+    width: 15rem;
+}
+
+.num-pago input{
+    width: 14.4rem;
+    font-size: 1.1rem;
+    height: 1.3rem;
+    margin: 0 0 0.6rem 0.6rem;
+    border: 1px solid rgba(2, 2, 146, 0.632);
+    border-radius: 4px;
+}
+
+.depto-pago{
+    padding: 0.5rem;
+    width: 16rem;
+}
+
+.depto-pago input{
+    color: rgba(2, 2, 146, 0.632);
+    width: 14rem;
+    font-size: 1.1rem;
+    height: 1.3rem;
+    margin: 0 0 0.6rem 0.6rem;
+    border: 1px solid rgba(2, 2, 146, 0.632);
+    border-radius: 4px;
+    transition: height 1s 1s ease-in-out;
+}
+
+.dontshowdom{
+    height: 0rem;
+    display: none;
+}
+
+.summary-pago{
+    margin: 0.5rem;
+    display: inline-block;
+    border:1px solid rgba(219, 216, 216, 0.997);
+    box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.1);
+    width: 38rem;
+    padding: 1rem;
+}
+
+.summary-pago h5{
+    margin: 0;
+}
+
+.finish-pago{
+    cursor:pointer;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: rgb(24, 143, 24);
+    color:white;
+    font-size: 1.3rem;
+    width: 20rem;
+    height: 3rem;
+    margin-left: 8.5rem;
+    margin-top: 0.7rem;
+}

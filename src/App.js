@@ -8,6 +8,7 @@ import FooterComponent from './components/FooterComponent'
 import ClearCarritoModalComponent from './components/modals/ClearCarritoModalComponent'
 import CatalogoComponent from './components/CatalogoComponent';
 import PersonalizarPizzaComponent from './components/PersonalizarPizzaComponent';
+import PagarComponent from './components/PagarComponent';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" exact element={<IndexComponent/>}></Route>
             <Route path="/catalogo" exact element={<CatalogoComponent/>}></Route>
             <Route path="/personalizar" exact element={<PersonalizarPizzaComponent/>}></Route>
+            <Route path="/pagar" exact element={<PagarComponent/>}></Route>
           </Routes>
         </div>
       </Router>

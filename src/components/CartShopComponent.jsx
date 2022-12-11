@@ -17,6 +17,13 @@ class CartShopComponent extends Component {
         }
     }
 
+    pagar = () =>{
+        if(this.props.totalPrice !== 0){
+            window.location.href = 'http://localhost:3000/pagar';
+            console.log("se ejecuta la wea")
+        }
+    }
+
     /* <div className='container-cart-shop container-cart-shop-post-show' id="cart-shop"> */
     render() {
         let jaja = this.props.products.map((prd) => {
@@ -37,7 +44,7 @@ class CartShopComponent extends Component {
                         Limpiar 
                         {"\nCarrito :("}
                     </button>
-                    <button className='button-finish-cart-shop'>
+                    <button className='button-finish-cart-shop' onClick={this.pagar}>
                         <p className='p-button-left'>Finalizar Pedido</p>
                         <p className='p-button-right'>$ {this.props.totalPrice}</p>
                     </button>

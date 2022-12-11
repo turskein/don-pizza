@@ -1,0 +1,42 @@
+.container-summary-product{
+    font-size: 1.4rem;
+    margin: 0.2rem;
+}
+
+.cant-summary-product{
+    margin: 0;
+    padding: 0.2rem;
+    display: inline-block;
+    border-radius: 5px 0 0 0;
+    width: 3rem;
+    height: 2rem;
+    border: 1px solid rgba(2, 2, 146, 0.632);
+    text-align: center;
+}
+
+.desc-summary-product{
+    margin: 0;
+    border: 1px solid rgba(2, 2, 146, 0.632);
+    padding: 0.2rem;
+    height: 2rem;
+    display: inline-block;
+    width: 27rem;
+}
+
+.precio-summary-product{
+    text-align: center;
+    margin: 0;
+    border-radius: 0 5px 0 0;
+    border: 1px solid rgba(2, 2, 146, 0.632);
+    padding: 0.2rem;
+    height: 2rem;
+    width: 6rem;
+    display: inline-block;
+}
+
+.ingredients-summary-product{
+    width: 33.45rem;
+    padding-left: 4rem;
+    border: 1px solid rgba(2, 2, 146, 0.632);
+    border-radius: 0 0 5px 5px;
+}

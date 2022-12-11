@@ -1,0 +1,79 @@
+.list-ingred-container{
+    color: black;
+    position: fixed;
+    background-color: white;
+    width: 25.7rem;
+    height: 38rem;
+    border:1px solid rgba(219, 216, 216, 0.997);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 0 0 10px;
+    z-index: 19;
+    right: 0rem;
+    top: 5.2rem;
+    transition: width 0.1s 0.1s ease-in-out;
+}
+.title-list-ingred{
+    margin: 1rem 1rem 1rem 1.3rem;
+}
+
+.ingredients-list-ingred{
+    border-top: 1px solid rgba(0, 0, 0, 0.179);
+    width: 100%;
+    height: 29.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.179);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.ingredients-list-ingred p{
+    margin: 0.5rem;
+    font-size: 1.3rem;
+}
+.ingred-list-ingred{
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.caracs-list-ingred{
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.179);
+}
+
+.extras-list-ingred{
+    padding: 0.5rem;
+}
+
+.extras-list-ingred h5{
+
+    margin: 0 0 0.5rem 0;
+}
+
+.caracs-list-ingred h6{
+    margin: 0;
+}
+.add-list-ingred{
+    cursor:pointer;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: rgb(24, 143, 24);
+    color:white;
+    font-size: 1.3rem;
+    width: 17rem;
+    height: 3rem;
+    margin-left: 3.7rem;
+    margin-top: 0.7rem;
+}
+
+.add-list-ingred span{
+display: inline-block;
+width: 11rem;
+}
+
+.add-list-ingred:hover{
+    background-color: rgb(22, 130, 22);
+    margin-top: 0.6rem;
+    margin-left: 3.6rem;
+    padding: 0.1rem;
+    width: 17.2rem;
+    height: 3.2rem;
+}

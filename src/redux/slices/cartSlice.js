@@ -21,9 +21,9 @@ if(prodsFromLS_String){
     prodsFromLS = JSON.parse(prodsFromLS_String);
     for (let i = 0; i < prodsFromLS.length; i++) {
         let product = prodsFromLS[i];
-        console.log(totalPrice);
         const precio = parseInt(product.precio);
-        totalPrice = totalPrice + precio;
+        const cantidad = parseInt(product.cantidad);
+        totalPrice = totalPrice + precio*cantidad;
     }
 }else{
     prodsFromLS = [];
@@ -36,7 +36,9 @@ const initialState ={
     show: 0,
     modalClearCart: 0,
     products: prodsFromLS,
-    total: totalPrice
+    total: totalPrice,
+    idsperson: 100,
+    pizzaadded: 0
 }
 
 export const cartSlice = createSlice({
@@ -57,6 +59,13 @@ export const cartSlice = createSlice({
                 state.modalClearCart = 0;
             }
         },
+        switchShowAdded: (state) =>{
+            if(state.pizzaadded === 0){
+                state.pizzaadded = 1;
+            }else if(state.pizzaadded === 1){
+                state.pizzaadded = 0;
+            }
+        },
         deleteOneProduct(state, action){
             const id = action.payload;
             for (let i = 0; i < state.products.length; i++) {
@@ -67,10 +76,12 @@ export const cartSlice = createSlice({
                     if(product.cantidad > 1){
                         state.products[i].cantidad --;
                     // when there are just one product
+                    state.total = state.total - product.precio;
                     }else{
                         state.products = state.products.filter((prd) => {
                             return prd !== product;
                         })
+                        state.total = state.total - product.precio;
                     }
                     break;
                 }
@@ -100,12 +111,22 @@ export const cartSlice = createSlice({
                 state.products.push(newProduct);
             }
             localStorage.setItem("products",JSON.stringify(state.products));
+        },
+        addPersonalizedPizza: (state, action)=>{
+            let precio = action.payload.precio;
+            let ingredi = action.payload.ingredientes;
+            let id = state.idsperson;
+            let desc = "Pizza personalizada";
+            state.products.push({precio:precio,desc:desc,id:id,ingredientes:ingredi,cantidad:1});
+            state.idsperson ++;
+            localStorage.setItem("products",JSON.stringify(state.products));
+            state.total = state.total + precio;
         }
     },
 })
 /* 
 const { actions, reducer } = cartSlice; */
 
-export const { switchShow, addProduct, deleteAllProduct, deleteOneProduct, switchShowModalClear } = cartSlice.actions;
+export const { switchShow, addProduct, deleteAllProduct, deleteOneProduct, switchShowModalClear, addPersonalizedPizza, switchShowAdded } = cartSlice.actions;
 
 export default cartSlice.reducer;
