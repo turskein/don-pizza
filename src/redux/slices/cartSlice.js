@@ -94,6 +94,7 @@ export const cartSlice = createSlice({
             localStorage.removeItem("products");
         },
         addProduct: (state, action) => {
+            state.pizzaadded= 1;
             const newProduct = action.payload;
             state.total = state.total + parseInt(newProduct.precio);
             let pushed = 0;
@@ -106,6 +107,7 @@ export const cartSlice = createSlice({
                 }
 
             }
+
             // if the product wasn't finded then we add it to the cart
             if(pushed === 0){
                 state.products.push(newProduct);

@@ -26,7 +26,7 @@ class ClearCarritoModalComponent extends Component {
         return (
             <div id="added" className='container-persona-added hide-persona-added'>
                 <p>
-                Tú pizza ha sido agregada :D
+                Tú producto ha sido agregado al carrito :D
                 </p>
                 
                 <BiX  className='close-person-added' onClick={()=>{document.getElementById("added").classList.add("hide-persona-added");}}/>

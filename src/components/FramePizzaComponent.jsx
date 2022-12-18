@@ -51,8 +51,8 @@ class FramePizzaComponent extends Component {
                                 <td className='table-price'>{this.props.med}</td>
                             </tr>
                             <tr>
-                                <td>Grande</td>
-                                <td className='table-price'>{this.props.grande}</td>
+                                <td>{""}</td>
+                                <td className='table-price'>{""}</td>
                             </tr>
                         </tbody>
                     </table>

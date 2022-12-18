@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import "../css/listingred.css";
-import {addPersonalizedPizza,switchShowAdded} from '../redux/slices/cartSlice';
-import PersonPizzaAdded from "./modals/PersonPizzaAdded";
 
 class ListaIngredieentesComponent extends Component {
     render() {
@@ -180,17 +177,10 @@ class ListaIngredieentesComponent extends Component {
                     </div>
                 </div>
                 <button className='add-list-ingred' onClick={() => {this.props.addPersonalizedPizza({precio:precio,ingredientes:listIngred});this.props.switchShowAdded();}}><span>Agregar al Carrito</span> ${precio}</button>
-                <PersonPizzaAdded/>
             </div>
         )
     }
 }
 
 
-const mapStateToProps = (state) => ({
-    pizzaadded: state.stateShow.pizzaadded
-});
-
-const mapDispatchToProps = { addPersonalizedPizza, switchShowAdded };
-
-export default connect(mapStateToProps,mapDispatchToProps)(ListaIngredieentesComponent)
+export default ListaIngredieentesComponent

@@ -9,6 +9,7 @@ import ClearCarritoModalComponent from './components/modals/ClearCarritoModalCom
 import CatalogoComponent from './components/CatalogoComponent';
 import PersonalizarPizzaComponent from './components/PersonalizarPizzaComponent';
 import PagarComponent from './components/PagarComponent';
+import PersonPizzaAdded from './components/modals/PersonPizzaAdded';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <CartShopComponent/>
       <FooterComponent/>
       <ClearCarritoModalComponent/>
+      <PersonPizzaAdded/>
     </div>
   );
 }

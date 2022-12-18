@@ -14,10 +14,13 @@ class PagarComponent extends Component {
 
         this.state = {
             dom: 0,
+            propina: 0,
+            pago: 0,
+            recibo: 0
         }
     }
 
-    finalizarCompra = ()=>{
+    finalizarCompra = () => {
         window.location.href = 'http://localhost:3000';
         localStorage.removeItem("products");
     }
@@ -31,8 +34,54 @@ class PagarComponent extends Component {
 
         let everyProduct = this.props.products;
         let showProducts = everyProduct.map((prd) => {
-            return <SummaryProductComponent cant={prd.cantidad} desc={prd.desc} ingredientes={prd.ingredientes} precio={prd.precio}/>
+            return <SummaryProductComponent cant={prd.cantidad} desc={prd.desc} ingredientes={prd.ingredientes} precio={prd.precio} />
         })
+        let classPropnada = "button-entrega-pago";
+        let classPropcinco = "button-entrega-pago";
+        let classPropdiez = "button-entrega-pago";
+        switch (this.state.propina) {
+            case 0:
+                classPropnada = classPropnada + " selected";
+                break;
+            case 1:
+                classPropcinco = classPropcinco + " selected";
+                break;
+            case 2:
+                classPropdiez = classPropdiez + " selected";
+                break;
+            default:
+                break;
+        }
+
+        let pagoefe = "button-entrega-pago";
+        let pagotarj = "button-entrega-pago";
+        let pagoweb = "button-entrega-pago";
+        switch (this.state.pago) {
+            case 0:
+                pagoefe = pagoefe + " selected";
+                break;
+            case 1:
+                pagotarj = pagotarj + " selected";
+                break;
+            case 2:
+                pagoweb = pagoweb + " selected";
+                break;
+            default:
+                break;
+        }
+
+        let boleta = "button-entrega-pago";
+        let factura = "button-entrega-pago";
+        switch (this.state.recibo) {
+            case 0:
+                boleta = boleta + " selected";
+                break;
+            case 1:
+                factura = factura + " selected";
+                break;
+            default:
+                break;
+        }
 
         return (
             <div className='container-pago'>
@@ -49,20 +98,20 @@ class PagarComponent extends Component {
                     <div className='sect-entrega-pago'>
                         <div className='met-pago'>
                             <h5>Método de pago</h5>
-                            <button><BiMoney className='money-pago' /> Efectivo</button>
-                            <button><BiCreditCard className='card-pago' />Tarjeta</button>
-                            <button><img srcSet={webpay} alt="" className='img-pago' /> WebPay</button>
+                            <button className={pagoefe} onClick={()=>this.setState({pago:0})}><BiMoney className='money-pago' /> Efectivo</button>
+                            <button className={pagotarj} onClick={()=>this.setState({pago:1})}><BiCreditCard className='card-pago' />Tarjeta</button>
+                            <button className={pagoweb} onClick={()=>this.setState({pago:2})}><img srcSet={webpay} alt="" className='img-pago' /> WebPay</button>
                         </div>
                         <div className='prop-pago'>
                             <h5>Propina</h5>
-                            <button>Nada</button>
-                            <button>5%</button>
-                            <button>10%</button>
+                            <button className={classPropnada} onClick={()=>this.setState({propina:0})}>Nada</button>
+                            <button className={classPropcinco} onClick={()=>this.setState({propina:1})}>5%</button>
+                            <button className={classPropdiez} onClick={()=>this.setState({propina:2})}>10%</button>
                         </div>
                         <div className='recibo-pago'>
                             <h5>Recibo</h5>
-                            <button>Boleta</button>
-                            <button>Factura</button>
+                            <button className={boleta} onClick={()=>this.setState({recibo:0})}>Boleta</button>
+                            <button className={factura} onClick={()=>this.setState({recibo:1})}>Factura</button>
                         </div>
 
                     </div>
@@ -103,7 +152,7 @@ class PagarComponent extends Component {
                         </div>
                         <button className='finish-pago' onClick={this.finalizarCompra}>Finalizar Pago</button>
                     </div>
-                    
+
                 </div>
 
 
